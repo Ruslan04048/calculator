@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор конвертации текстовых чисел</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Калькулятор конвертации текстовых чисел</h2>
+
+      <div class="mb-3">
+        <label for="textInput" class="form-label">Введите число словами</label>
+        <input
+          type="text"
+          class="form-control"
+          id="textInput"
+          placeholder="Например, пятьдесят два"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="operation" class="form-label">Выберите операцию</label>
+        <select class="form-select" id="operation">
+          <option value="add">Сложение</option>
+          <option value="subtract">Вычитание</option>
+          <option value="multiply">Умножение</option>
+          <option value="divide">Деление</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="textInput2" class="form-label"
+          >Введите второе число словами</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="textInput2"
+          placeholder="Например, двадцать"
+        />
+      </div>
+
+      <button class="btn btn-primary mb-3" onclick="calculate()">
+        Вычислить
+      </button>
+
+      <div id="result" class="alert alert-info d-none"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
